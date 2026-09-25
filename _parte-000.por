@@ -15,7 +15,7 @@ programa {
     inteiro estoque_prod1 = 10, estoque_prod2 = 15, estoque_prod= 0
   }
 } 
- inteiro qtd_carrinho_prod1 = 0
+    inteiro qtd_carrinho_prod1 = 0
     inteiro qtd_carrinho_prod2 = 0
     inteiro qtd_carrinho_prod3 = 0
 
@@ -36,22 +36,31 @@ programa {
 
       escreva("MENU PRINCIPAL")
     }
-   escreva("pressione ENTER para continuar...")
+      escreva("1. ver produtos e adicionar ao carrinho (CREATE)")
 
-   escreva("Quantidade inválida ou acima do estoque disponível!\n")
-    }
-   } senao {
-    escreva("Opção inválida!\n")
-   }
 
-   escreva("Pressione ENTER para voltar ao menu...")
-   leia(tecla_pausa)
-   pare
+      escreva("2. ver meus itens no carrinho (READ)")
+
+
+      escreva("3. alterar quantidade no carrinho (READ)")
+
+
+      escreva("4. remover item do carrinho (DELETE)")
+
+
+      escreva("0. finalizar compra e ir ao pagamento")
+
+
+      escreva("Escolha uma opçao: ")
+      leia(opcao_menu_principal)
+      
+      Escolha (opcao_menu_principal)
+      {
 
    // =========================================================
    // D - DELETE (Remover Item do Carrinho)
    // =========================================================
-   
+      }
    caso 4: 
     limpa()  escreva("---REMOVER ITEM DO CARRINHO---")
       escreva("1. camisa esportiva (no carrinho: ", qtd_carrinho_prod1, ")")  
@@ -64,7 +73,6 @@ programa {
         qtd_carrinho_prod1 = 0 
      escreva("camisa esportiva removida do carrinho!") 
      }
-0 commit commentsComments0 (0)
 
 
 
