@@ -1,7 +1,6 @@
 programa {
- funcao inicio() {
-  
-   //variaveis de controle de navegacao
+  funcao inicio() {
+      //variaveis de controle de navegacao
    inteiro opcao_menu_principal = -1
    inteiro opcao_crud = -1
    inteiro opcao_pagamento = 0
@@ -319,3 +318,37 @@ programa {
       pare
  
   caso contrario:
+  }
+} 
+  escreva("Opção inválida! Escolha uma das opções do menu.\n")
+          escreva("Pressione ENTER para continuar...\n")
+          leia(tecla_pausa)
+          pare
+      }
+    }
+
+
+    // CALCULAR VALOR TOTAL DO CARRINHO
+    valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) +
+                        (qtd_carrinho_prod2 * preco_prod2) +
+                        (qtd_carrinho_prod3 * preco_prod3)
+
+ // 2. ETAPA DE PAGAMENTO
+    limpa()
+    se (valor_total_bruto > 0)
+    {
+      escreva("--- FORMA DE PAGAMENTO ---\n")
+      escreva("1. Pagamento via PIX (10% de desconto)\n")
+      escreva("2. Cartão de Crédito (Valor normal)\n")
+      escreva("Escolha a forma de pagamento: \n")
+      leia(opcao_pagamento)
+
+
+      escolha (opcao_pagamento)
+      {
+        caso 1:
+          valor_desconto = valor_total_bruto * 0.10
+          valor_final = valor_total_bruto - valor_desconto
+          pare
+
+
