@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-      //variaveis de controle de navegacao
+        //variaveis de controle de navegacao
    inteiro opcao_menu_principal = -1
    inteiro opcao_crud = -1
    inteiro opcao_pagamento = 0
@@ -233,8 +233,9 @@ programa {
    
    caso 4:
    
-   caso 4:
-  limpa()
+  
+  limpa() 
+  
   escreva("---REMOVER ITEM DO CARRINHO---")
 
   escreva("1. camisa esportiva (no carrinho: ", qtd_carrinho_prod1, ")")
@@ -350,5 +351,6 @@ programa {
           valor_desconto = valor_total_bruto * 0.10
           valor_final = valor_total_bruto - valor_desconto
           pare
-
+  }
+} 
 
